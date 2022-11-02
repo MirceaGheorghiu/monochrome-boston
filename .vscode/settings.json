@@ -29,6 +29,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "json.schemas": [],
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "liveServer.settings.port": 5501
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
