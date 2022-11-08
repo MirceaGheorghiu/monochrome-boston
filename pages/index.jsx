@@ -6,12 +6,12 @@ export default function Home() {
         {/*mobile */}
         <a className="button button-primary"
           href=""
-          title="View all">
-          View all
+          title="New in">
+          New in
         </a>
 
         {/* desktop */}
-        <a className="mx-2 button button-primary button-large"
+        <a className="mx-2 button button-large"
           href=""
           title="View all">
           View all
