@@ -1,0 +1,56 @@
+.header-primary {
+  background-color: $gray-primary;
+  color: $white;
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    align-items: center;
+
+    li > a {
+      font-size: 32px;
+    }
+
+    .header-search {
+      border: 1px solid $gray-secondary;
+      justify-self: center;
+
+      button {
+        border-style: none;
+        background: transparent;
+        outline: none;
+        color: $gray-secondary;
+        font-size: 20px;
+      }
+
+      input {
+        font-family: 'Roboto', sans-serif;
+        border-style: none;
+        outline: none;
+        text-transform: lowercase;
+        background: transparent;
+        font-size: 16px;
+        font-style: italic;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li > a {
+        color: $gray-tertiary;
+        text-transform: uppercase;
+        font-size: 24px;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $gray-secondary;
+        }
+      }
+    }
+  }
+}
