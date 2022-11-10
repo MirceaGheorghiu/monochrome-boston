@@ -28,13 +28,13 @@
 
 .header-controls {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 
   h1 {
     grid-column: 1 / span 1;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    justify-self: center;
+    justify-self: start;
     align-self: center;
     font-size: 24px;
     margin: 0;
@@ -42,7 +42,7 @@
 
   ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 10px;
     grid-column: 2 / span 1;
     font-size: 22px;

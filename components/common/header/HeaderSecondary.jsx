@@ -57,7 +57,7 @@ export default function HeaderSecondary() {
           </ul>
         </div>
 
-        <div className="header-controls">
+        <div className="header-controls ">
           <h1 className="d-lg-none">Monochrome</h1>
 
           <form method="GET"
