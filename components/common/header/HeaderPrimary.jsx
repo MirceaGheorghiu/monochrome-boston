@@ -16,7 +16,7 @@ export default function HeaderPrimary() {
               className="header-search"
             >
               <input type="text"
-                placeholder="&nbsp;&nbsp;&nbsp;Search"
+                placeholder="Search"
                 name="search"
               />
               <button type="submit">

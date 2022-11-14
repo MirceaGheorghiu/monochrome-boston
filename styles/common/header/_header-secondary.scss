@@ -1,6 +1,4 @@
 .header-secondary {
-  margin: 16px;
-
   @include media-breakpoint-up(lg) {
     background: url(/images/banners/banner-homepage-header.png) no-repeat center
       center / cover;
@@ -11,8 +9,11 @@
 
 .header-secondary-inner {
   @include media-breakpoint-up(lg) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    // am ales space-around si nu between
+    // pt ca altfel pe monitorul meu iconitele de la controls
+    // (inima si cart-ul) se duc peste parul baiatului si nu se mai disting, fiind negre)
+    justify-content: space-around;
     color: $white;
 
     .header-connect ul {
@@ -42,7 +43,7 @@
 
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 10px;
     grid-column: 2 / span 1;
     font-size: 22px;
