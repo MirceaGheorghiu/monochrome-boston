@@ -1,0 +1,31 @@
+.home-catalog-preview {
+  text-align: center;
+
+  header {
+    border-top: 1px solid $gary-quaternary;
+    h1 {
+      font-size: 18px;
+
+      a {
+        text-transform: initial;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 35px;
+
+        a {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      position: relative;
+    }
+  }
+}

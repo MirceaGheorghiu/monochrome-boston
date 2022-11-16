@@ -1,7 +1,6 @@
 .button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  text-transform: lowercase;
   background-color: $white;
   color: $gray-primary;
   border: 1px solid $black;
@@ -14,17 +13,13 @@
 
   &-primary {
     font-size: 12px;
-    padding: 8px 16px;
+    padding: 4px 18px;
     text-transform: uppercase;
-  }
-
-  &-large {
-    font-size: 22px;
-    padding: 10px 20px;
   }
 
   &-secondary {
     font-size: 14px;
+    padding: 4px 16px;
     background-color: transparent;
     text-transform: uppercase;
 
@@ -32,6 +27,20 @@
       background-color: $gray-primary;
       color: $white;
     }
+  }
+
+  &-small {
+    font-size: 12px;
+    padding: 6px 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+
+  &-large {
+    font-size: 22px;
+    padding: 8px 18px;
+    font-weight: 400;
+    text-transform: lowercase;
   }
 
   &-inverted {

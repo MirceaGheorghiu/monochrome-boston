@@ -1,5 +1,5 @@
-import HeaderPrimary from "./HeaderPrimary";
-import HeaderSecondary from "./HeaderSecondary";
+import HeaderPrimary from './HeaderPrimary';
+import HeaderSecondary from './HeaderSecondary';
 
 export default function Header() {
   return (

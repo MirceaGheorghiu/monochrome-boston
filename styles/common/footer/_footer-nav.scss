@@ -1,0 +1,62 @@
+.footer-nav {
+  grid-area: nav;
+  font-family: 'Roboto', sans-serif;
+
+  @include media-breakpoint-up(lg) {
+    background-color: $gray-tertiary;
+    color: $gray-primary;
+  }
+
+  header {
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 300;
+      font-size: 22px;
+    }
+  }
+
+  div {
+    // am ales grid si nu flex, ca sa pot alinia border-right in mijloc
+    // si sa ramana acolo responsive
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-transform: lowercase;
+
+    @include media-breakpoint-up(lg) {
+      font-family: 'Playfair Display', serif;
+
+      ul:nth-child(1) {
+        margin-left: 150px;
+      }
+    }
+
+    ul {
+      line-height: 37px;
+
+      &:first-child {
+        border-right: 2px solid $white;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      ul:first-child {
+        border-right: none;
+      }
+
+      ul:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

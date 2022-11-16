@@ -27,3 +27,18 @@ body {
   font-family: 'Playfair Display', serif;
   color: $gray-primary;
 }
+
+// am schimbat valorile de padding lateral, din containerul de bootstrap, pt a se potrivi design-ului
+.container {
+  padding: 0 42px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+  }
+}
+
+// homepage
+@import './homepage/index';
+
+// catalog
+@import './catalog/index';

@@ -1,0 +1,40 @@
+@import './home-catalog-preview';
+@import './home-content';
+
+.content-main {
+  .banner-main {
+    background: url('/images/banners/banner-main-mobile.png') no-repeat center
+      center / cover;
+    height: 177px;
+    width: 100%;
+    position: relative;
+
+    .button-primary {
+      position: absolute;
+      top: 120px;
+      right: 42px;
+    }
+  }
+
+  section:nth-child(2),
+  section:nth-child(3) {
+    button {
+      display: none;
+    }
+  }
+
+  section:nth-child(5),
+  section:nth-child(6) {
+    h1 {
+      text-transform: uppercase;
+    }
+
+    .button-large {
+      display: none;
+
+      @include media-breakpoint-up(lg) {
+        display: inline;
+      }
+    }
+  }
+}

@@ -20,13 +20,13 @@ export default function HeaderPrimary() {
                 name="search"
               />
               <button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
               </button>
             </form>
           </li>
         </ul>
 
-        <nav class="d-none d-lg-block">
+        <nav className="d-none d-lg-block">
           <ul>
             <li>
               <Link

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HeaderSecondary() {
   return (
     <>
-      <section className="header-secondary-inner container">
+      <section className="header-secondary-inner my-2 my-lg-0 pt-lg-5 container">
         <div className="header-connect d-none d-lg-block">
           <ul>
             <li>
@@ -42,7 +42,7 @@ export default function HeaderSecondary() {
                 rel="noopener noreferrer"
                 title="Instagram"
               >
-                <i className="fa-brands fa-square-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </a>
             </li>
 

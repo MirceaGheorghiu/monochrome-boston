@@ -1,7 +1,7 @@
 .header-secondary {
   @include media-breakpoint-up(lg) {
-    background: url(/images/banners/banner-homepage-header.png) no-repeat center
-      center / cover;
+    background: $gray-primary url(/images/banners/banner-homepage-header.png)
+      no-repeat center center / cover;
     height: 500px;
     margin: 0;
   }
@@ -11,8 +11,8 @@
   @include media-breakpoint-up(lg) {
     display: flex;
     // am ales space-around si nu between
-    // pt ca altfel pe monitorul meu iconitele de la controls
-    // (inima si cart-ul) se duc peste parul baiatului si nu se mai disting, fiind negre)
+    // pt ca altfel pe monitorul meu (view 100%) iconitele de la controls
+    // (inima si cart-ul) se duc peste parul baiatului si nu se mai disting, fiind inchise la culoare)
     justify-content: space-around;
     color: $white;
 
@@ -20,8 +20,7 @@
       display: flex;
       justify-content: center;
       gap: 22px;
-      margin-top: 40px;
-      font-size: 22px;
+      font-size: 24px;
       text-transform: uppercase;
     }
   }
@@ -46,7 +45,7 @@
     justify-content: flex-end;
     gap: 10px;
     grid-column: 2 / span 1;
-    font-size: 22px;
+    font-size: 24px;
 
     @include media-breakpoint-up(lg) {
       color: $black;
@@ -57,7 +56,6 @@
 
   @include media-breakpoint-up(lg) {
     justify-items: center;
-    margin-top: 40px;
 
     .header-search {
       border: 1px solid $gray-secondary;
