@@ -10,6 +10,25 @@
     }
   }
 
+  &-image {
+    img {
+      width: 100%;
+    }
+
+    .badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      i {
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $gray-secondary;
+        }
+      }
+    }
+  }
   .product-tile-price {
     @include media-breakpoint-up(lg) {
       font-size: 22px;

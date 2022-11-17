@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function HeaderSecondary() {
   return (
@@ -7,7 +7,8 @@ export default function HeaderSecondary() {
         <div className="header-connect d-none d-lg-block">
           <ul>
             <li>
-              <a href="http://youtube.com"
+              <a
+                href="http://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Youtube"
@@ -17,7 +18,8 @@ export default function HeaderSecondary() {
             </li>
 
             <li>
-              <a href="http://facebook.com"
+              <a
+                href="http://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Facebook"
@@ -27,7 +29,8 @@ export default function HeaderSecondary() {
             </li>
 
             <li>
-              <a href="http://twitter.com"
+              <a
+                href="http://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Twitter"
@@ -37,7 +40,8 @@ export default function HeaderSecondary() {
             </li>
 
             <li>
-              <a href="http://instagram.com"
+              <a
+                href="http://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Instagram"
@@ -47,56 +51,44 @@ export default function HeaderSecondary() {
             </li>
 
             <li>
-              <a href="tel:+0044 (0)10 2345 6789"
-                title="Call us"
-              >
+              <a href="tel:+0044 (0)10 2345 6789" title="Call us">
                 Call us +44 (0)10 2345 6789
               </a>
             </li>
-
           </ul>
         </div>
 
         <div className="header-controls ">
           <h1 className="d-lg-none">Monochrome</h1>
 
-          <form method="GET"
-            className="header-search d-none d-lg-block"
-          >
+          <form method="GET" className="header-search d-none d-lg-block">
             <button type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </button>
-            <input type="text"
+            <input
+              type="search"
               placeholder="Search"
-              name="search"
-            />
+              name="search" />
           </form>
 
           <ul>
             <li>
-              <Link href="/"
-                title="My account"
-              >
+              <Link href="/" title="My account">
                 <i className="fa-solid fa-user"></i>
               </Link>
             </li>
 
             <li>
-              <Link href="/"
-                title="Wishlist"
-              >
+              <Link href="/" title="Wishlist">
                 <i className="fa-solid fa-heart"></i>
               </Link>
             </li>
 
             <li>
-              <Link href="/"
-                title="Add to cart"
-              >
+              <Link href="/" title="Add to cart">
                 <i className="fa-solid fa-cart-shopping"></i>
               </Link>
             </li>
-
           </ul>
         </div>
       </section>
