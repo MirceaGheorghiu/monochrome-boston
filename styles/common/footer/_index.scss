@@ -12,15 +12,7 @@
   }
 
   .footer-inner {
-    // nu am folosit container pe .footer-inner,
-    // ca sa pot intinde cele 2 nuante de gri (in mobile version) pe tot footerul
-    // si am centrat .footer-inner doar in desktop version
-    // (am mers cu max-width-ul de la Bootstrap - 1320px, luat din Inspector)
-
-    max-width: 1320px;
-    margin: 0 auto;
-    width: 100%;
-
+    padding: 0;
     text-align: center;
     display: grid;
     grid-template-areas:
@@ -29,6 +21,7 @@
       'connect';
 
     @include media-breakpoint-up(lg) {
+      padding: 0 12px;
       grid-template-areas: 'contact nav connect';
       column-gap: 200px;
       text-align: start;

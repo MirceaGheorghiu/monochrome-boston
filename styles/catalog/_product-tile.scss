@@ -13,6 +13,13 @@
   &-image {
     img {
       width: 100%;
+      border-radius: 20px;
+      transition: transform 0.5s linear, box-shadow 0.5s linear;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 5px 5px 5px $gray-secondary;
+      }
     }
 
     .badge {
@@ -21,10 +28,11 @@
       right: 0;
 
       i {
-        transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
 
         &:hover {
           color: $gray-secondary;
+          transform: scale(1.2);
         }
       }
     }

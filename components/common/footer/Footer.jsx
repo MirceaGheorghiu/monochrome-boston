@@ -6,7 +6,7 @@ import FooterNav from "./FooterNav";
 export default function Footer() {
   return (
     <section className="footer mt-5">
-      <div className="footer-inner py-lg-4">
+      <div className="footer-inner py-lg-4 gap-10 container">
         <FooterContact></FooterContact>
 
         <FooterNav></FooterNav>

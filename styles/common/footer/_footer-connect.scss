@@ -4,69 +4,54 @@
   color: $gray-primary;
   font-family: 'Roboto', sans-serif;
 
+  header {
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+    }
+  }
+
   .footer-newsletter {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @include media-breakpoint-up(lg) {
+      align-items: stretch;
+    }
+  }
+
+  label:nth-of-type(2) {
+    font-family: 'Playfair Display', serif;
+    text-transform: lowercase;
+    cursor: pointer;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: column-reverse;
       align-items: flex-start;
-
-      form:nth-of-type(1) {
-        label {
-          font-family: 'Playfair Display', serif;
-          font-size: 20px;
-          text-transform: lowercase;
-          line-height: 37px;
-        }
-
-        input {
-          font-style: italic;
-        }
-      }
     }
 
-    header {
-      h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 22px;
-      }
-    }
-
-    form:nth-of-type(1) {
-      h2 {
-        font-size: 16px;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
-
-      input {
-        border: 1px solid $gray-secondary;
-        width: 270px;
-        padding: 0 10px;
-      }
-    }
-
-    form:nth-of-type(2) {
+    div {
       display: inline-flex;
-      width: 270px;
-      gap: 2px;
+      font-size: 12px;
+      gap: 5px;
+      max-width: 270px;
 
-      input {
-        width: 14px;
-        align-self: start;
-        margin-right: 3px;
+      a {
+        text-decoration: underline;
       }
 
-      label {
-        font-size: 12px;
-        width: 270px;
-        line-height: 14px;
-        text-align: start;
-
-        a {
-          text-decoration: underline;
-        }
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+        line-height: 21px;
+        max-width: unset;
       }
     }
   }
@@ -82,6 +67,14 @@
       justify-content: center;
       gap: 20px;
       font-size: 30px;
+
+      i {
+        transition: transform 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
 
       @include media-breakpoint-up(lg) {
         justify-content: flex-start;

@@ -22,6 +22,14 @@
       gap: 22px;
       font-size: 24px;
       text-transform: uppercase;
+
+      i {
+        transition: transform 0.5s linear;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
     }
   }
 }
@@ -46,6 +54,14 @@
     gap: 10px;
     grid-column: 2 / span 1;
     font-size: 24px;
+
+    i {
+      transition: transform 0.5s linear;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
 
     @include media-breakpoint-up(lg) {
       color: $black;
