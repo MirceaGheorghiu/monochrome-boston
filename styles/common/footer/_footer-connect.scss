@@ -39,10 +39,18 @@
     }
 
     div {
-      display: inline-flex;
       font-size: 12px;
-      gap: 5px;
-      max-width: 270px;
+
+      label {
+        display: inline;
+        position: static;
+        margin-left: 4px;
+      }
+
+      input {
+        width: 12px;
+        height: 12px;
+      }
 
       a {
         text-decoration: underline;

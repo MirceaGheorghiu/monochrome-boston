@@ -13,6 +13,7 @@
 
   .footer-inner {
     padding: 0;
+    max-width: unset;
     text-align: center;
     display: grid;
     grid-template-areas:
@@ -21,7 +22,7 @@
       'connect';
 
     @include media-breakpoint-up(lg) {
-      padding: 0 12px;
+      max-width: 1300px;
       grid-template-areas: 'contact nav connect';
       column-gap: 200px;
       text-align: start;
